@@ -15,6 +15,9 @@ public class CustomTerrainEditor : Editor
     SerializedProperty perlinYScale;
     SerializedProperty perlinOffsetX;
     SerializedProperty perlinOffsetY;
+    SerializedProperty perlinOctaves;
+    SerializedProperty perlinPresistance;
+    SerializedProperty perlinHeightScale;
 
 
     //fold outs ---------------------
@@ -32,7 +35,9 @@ public class CustomTerrainEditor : Editor
         perlinYScale = serializedObject.FindProperty("perlinYScale");
         perlinOffsetX = serializedObject.FindProperty("perlinOffsetX");
         perlinOffsetY = serializedObject.FindProperty("perlinOffsetY");
-
+        perlinOctaves = serializedObject.FindProperty("perlinOctaves");
+        perlinPresistance = serializedObject.FindProperty("perlinPresistance");
+        perlinHeightScale = serializedObject.FindProperty("perlinHeightScale");
 
     }
     public override void OnInspectorGUI()
@@ -75,6 +80,9 @@ public class CustomTerrainEditor : Editor
             EditorGUILayout.Slider(perlinYScale, 0, 0.05f, new GUIContent("Y Scale"));
             EditorGUILayout.IntSlider(perlinOffsetX, 0, 10000, new GUIContent("Offset X"));
             EditorGUILayout.IntSlider(perlinOffsetY, 0, 10000, new GUIContent("Offset Y"));
+            EditorGUILayout.IntSlider(perlinOctaves, 0, 10, new GUIContent("Octaves"));
+            EditorGUILayout.Slider(perlinPresistance, 0.1f, 10, new GUIContent("Presistance"));
+            EditorGUILayout.Slider(perlinHeightScale, 0, 1, new GUIContent("HeightScale"));
             if (GUILayout.Button("Perlin"))
             {
                 terrain.Perlin();

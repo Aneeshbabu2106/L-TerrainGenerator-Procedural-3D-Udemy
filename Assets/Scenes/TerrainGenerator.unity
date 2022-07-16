@@ -252,8 +252,11 @@ MonoBehaviour:
   heightMapScale: {x: 1, y: 1, z: 1}
   perlinXScale: 0.005
   perlinYScale: 0.005
-  perlinOffsetX: 1000
-  perlinOffsetY: 1000
+  perlinOffsetX: 5434
+  perlinOffsetY: 4312
+  perlinOctaves: 3
+  perlinPresistance: 1
+  perlinHeightScale: 0.42
   terrain: {fileID: 1206770145}
   terrainData: {fileID: 15600000, guid: b4e1cdff48d5c694f9037961493e98fb, type: 2}
 --- !u!154 &1206770144
