@@ -20,7 +20,7 @@ public class LogoTableEditor : Editor
 		{
 			new TableColumn("G", 28f),
 			new TableColumn("U", 22f),
-			new TableColumn("I     ", 35f),
+			new TableColumn("I", 35f),
 		};
 
 		List<List<TableCell>> rows = new List<List<TableCell>>();

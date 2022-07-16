@@ -225,9 +225,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206770146}
+  - component: {fileID: 1206770143}
   - component: {fileID: 1206770145}
   - component: {fileID: 1206770144}
-  - component: {fileID: 1206770143}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Terrain
@@ -247,6 +247,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb7d95ca6168f9429660fb9cd2c6ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomHeightRange: {x: 0, y: 0.1}
+  heightMapImage: {fileID: 2800000, guid: 12273d9de5128d84c90ceb2a539b8297, type: 3}
+  heightMapScale: {x: 1, y: 1, z: 1}
+  perlinXScale: 0.005
+  perlinYScale: 0.005
+  perlinOffsetX: 1000
+  perlinOffsetY: 1000
+  terrain: {fileID: 1206770145}
+  terrainData: {fileID: 15600000, guid: b4e1cdff48d5c694f9037961493e98fb, type: 2}
 --- !u!154 &1206770144
 TerrainCollider:
   m_ObjectHideFlags: 0
